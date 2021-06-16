@@ -1,0 +1,17 @@
+{
+  "name": "swag/example-customer-middle-name",
+  "description": "Example plugin that adds a customer middle name",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Swag\\ExampleCustomerMiddleName\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "Swag\\ExampleCustomerMiddleName\\SwagExampleCustomerMiddleName",
+    "label": {
+      "en-GB": "Example plugin that adds a customer middle name"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{% sw_extends '@Storefront/storefront/component/address/address-personal.html.twig' %}
+
+{% set currentMiddleName = '' %}
+{% if context.customer.customFields.custom_customer_middlename %}
+    {% set currentMiddleName = context.customer.customFields.custom_customer_middlename %}
+{% endif %}
+
+{% block component_address_personal_fields_first_name %}
+    {{ parent() }}
+    <div class="form-group col-sm-6">
+        {% block component_address_personal_fields_middle_name_label %}
+            <label class="form-label"
+                   for="{{ prefix }}personalMiddleName">
+                {{ "swagExampleCustomerMiddleName.middleNameLabel"|trans|sw_sanitize }}
+            </label>
+        {% endblock %}
+
+        {% block component_address_personal_fields_middle_name_input %}
+            <input type="text"
+                   class="form-control{% if formViolations.getViolations('/middleName') is not empty %} is-invalid{% endif %}"
+                   id="{{ prefix }}personalMiddleName"
+                   placeholder="{{ "swagExampleCustomerMiddleName.middleNamePlaceholder"|trans|striptags }}"
+                   name="{% if prefix %}{{ prefix }}[middleName]{% else %}middleName{% endif %}"
+                   value="{{ currentMiddleName }}">
+        {% endblock %}
+
+        {% block component_address_personal_fields_middle_name_input_error %}
+            {% if formViolations.getViolations('/middleName') is not empty %}
+                {% sw_include '@Storefront/storefront/utilities/form-violation.html.twig' with {
+                    violationPath: '/middleName'
+                } %}
+            {% endif %}
+        {% endblock %}
+    </div>
+{% endblock %}

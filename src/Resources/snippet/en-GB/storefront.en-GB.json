@@ -1,0 +1,6 @@
+{
+    "swagExampleCustomerMiddleName": {
+            "middleNameLabel": "Middle name",
+            "middleNamePlaceholder": "Optional"
+    }
+}
