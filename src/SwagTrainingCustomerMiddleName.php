@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Swag\TrainingCustomerMiddleName;
+namespace SwagTraining\CustomerMiddleName;
 
 use Shopware\Core\Framework\Plugin;
 

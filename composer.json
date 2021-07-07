@@ -9,7 +9,7 @@
     }
   },
   "extra": {
-    "shopware-plugin-class": "SwagTrainig\\CustomerMiddleName\\SwagTrainingCustomerMiddleName",
+    "shopware-plugin-class": "SwagTraining\\CustomerMiddleName\\SwagTrainingCustomerMiddleName",
     "label": {
       "en-GB": "Example plugin that adds a customer middle name"
     }
