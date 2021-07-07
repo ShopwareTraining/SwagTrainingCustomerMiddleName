@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Swag\ExampleCustomerMiddleName\Subscriber;
+namespace SwagTraining\CustomerMiddleName\Subscriber;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Shopware\Core\Framework\Event\DataMappingEvent;

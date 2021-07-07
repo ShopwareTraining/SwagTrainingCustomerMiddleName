@@ -7,5 +7,5 @@
 ```bash
 composer require foo/bar
 bin/console plugin:refresh
-bin/console plugin:install --activate SwagExampleCustomerMiddleName
+bin/console plugin:install --activate SwagTrainingCustomerMiddleName
 ```

@@ -1,15 +1,15 @@
 {
-  "name": "swag/example-customer-middle-name",
+  "name": "swag-training/customer-middle-name",
   "description": "Example plugin that adds a customer middle name",
   "type": "shopware-platform-plugin",
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Swag\\ExampleCustomerMiddleName\\": "src/"
+      "SwagTraining\\CustomerMiddleName\\": "src/"
     }
   },
   "extra": {
-    "shopware-plugin-class": "Swag\\ExampleCustomerMiddleName\\SwagExampleCustomerMiddleName",
+    "shopware-plugin-class": "SwagTrainig\\CustomerMiddleName\\SwagTrainingCustomerMiddleName",
     "label": {
       "en-GB": "Example plugin that adds a customer middle name"
     }
